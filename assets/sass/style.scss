@@ -225,3 +225,130 @@ section{
         width: 90rem;
     }
 }
+
+.section-title{
+    position: relative;
+    text-align: center;
+    z-index: var(--z-normal);
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: calc(50% - 7px);
+        bottom: -16px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        border: 3px solid var(--first-color);
+    }
+
+    & h3{
+        font-weight: $font-bold;
+        text-transform: uppercase;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            left: calc(50% - 45px);
+            bottom: -10px;
+            background-color: var(--first-color);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            left: calc(50% + 15px);
+            bottom: -10px;
+            background-color: var(--first-color);
+        }
+    }
+}
+
+.about{
+    &__container{
+        max-width: 1024px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-column-gap: 2rem;
+        width: calc(100% - 2rem);
+        text-align: center;
+        row-gap: 2rem;
+        margin-top: $header-height;
+    }
+
+    &__text{
+        background: var(--black-color);
+        box-shadow: inset 0 10px 15px #1e242e;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    &__subtitle{
+        margin-bottom: 5px;
+    }
+
+    &__img{
+        position: relative;
+        width: 300px;
+        height: 400px;
+        justify-self: center;
+        
+        & img{
+            width: 100%;
+            height: 100%;
+            border-radius: .5rem;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(88, 166, 255,0.1);
+            transition: 0.5s ease-in-out;
+        }
+
+        &:hover::after{
+            background: none;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 24px;
+            left: -24px;
+            width: 300px;
+            height: 400px;
+            background: transparent;
+            border: 2px solid var(--first-color);
+            border-radius: 4px;
+            z-index: 1;
+            transition: 0.5s ease-in-out;
+        }
+
+        &:hover::before{
+            top: 20px;
+            left: -20px;
+        }
+    }
+}
+
+.about,
+.services,
+.prices,
+.skills,
+.testimonials{
+    background: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
