@@ -28,6 +28,7 @@ ul {
 a {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
   color: #fff;
@@ -56,8 +57,9 @@ section {
   text-align: center;
   z-index: 1;
 }
+
 .section-title::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 14px;
   height: 14px;
@@ -66,12 +68,14 @@ section {
   border-radius: 50%;
   border: 3px solid #58a6ff;
 }
+
 .section-title h3 {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .section-title h3::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 3px;
@@ -79,8 +83,9 @@ section {
   bottom: -10px;
   background-color: #58a6ff;
 }
+
 .section-title h3:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 3px;
@@ -102,6 +107,7 @@ section {
   border: none;
   margin: 10px;
 }
+
 .button:hover {
   background: #fff;
   color: black;
@@ -139,11 +145,13 @@ section {
   width: 100%;
   font-weight: 700;
 }
+
 .nav ul li {
   display: inline-block;
   line-height: 70px;
   margin: 0 5px;
 }
+
 .nav ul li a {
   position: relative;
   color: #fff;
@@ -153,8 +161,9 @@ section {
   border-radius: 3px;
   text-transform: uppercase;
 }
+
 .nav ul li a::before {
-  content: "";
+  content: '';
   border-radius: 5px;
   background-image: -webkit-gradient(linear, left top, right top, from(#58a6ff), to(#0d1117));
   background-image: linear-gradient(90deg, #58a6ff 0%, #0d1117 100%);
@@ -172,6 +181,7 @@ section {
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
 }
+
 .nav ul li a:hover::before {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
@@ -179,6 +189,7 @@ section {
           transform-origin: top;
   z-index: -1;
 }
+
 .nav__logo {
   color: #fff;
   display: -webkit-box;
@@ -189,15 +200,18 @@ section {
           align-items: center;
   margin-bottom: 20px;
 }
+
 .nav__logo a {
   color: #58a6ff;
   width: 38px;
   height: 38px;
 }
+
 .nav #nav__logo {
   color: #58a6ff;
   fill: transparent;
 }
+
 .nav__checkbtn {
   font-size: 30px;
   color: #58a6ff;
@@ -209,6 +223,7 @@ section {
   visibility: hidden;
   display: none;
 }
+
 .nav #check {
   display: none;
 }
@@ -220,20 +235,23 @@ section {
 /*=============================================*/
 .site-main {
   /*==============================================
-     /*==============================================
-      ABOUT
-     /*==============================================
-     /*=============================================*/
+    /*==============================================
+     ABOUT
+    /*==============================================
+    /*=============================================*/
 }
+
 .site-main .site-banner h1 {
   font-size: 5rem;
 }
+
 .site-main .site-banner h3 {
   padding-top: 25%;
   font-weight: 500;
 }
+
 .site-main .site-banner h3::after {
-  content: "";
+  content: '';
   height: 2px;
   width: 18vw;
   background: #58a6ff;
@@ -244,9 +262,11 @@ section {
   -webkit-filter: blur(1px);
           filter: blur(1px);
 }
+
 .site-main .site-banner h4 {
   font-size: 1.5rem;
 }
+
 .site-main .site-banner span {
   font-size: 5rem;
   position: relative;
@@ -254,6 +274,7 @@ section {
   -webkit-text-stroke: 0.3vw #383d52;
   text-transform: uppercase;
 }
+
 .site-main .site-banner span::before {
   content: attr(data-text);
   position: absolute;
@@ -267,36 +288,49 @@ section {
   -webkit-animation: animateText 6s linear infinite;
           animation: animateText 6s linear infinite;
 }
+
 @-webkit-keyframes animateText {
-  0%, 10%, 60% {
+  0%,
+  10%,
+  60% {
     width: 0%;
   }
-  70%, 90% {
+  70%,
+  90% {
     width: 100%;
   }
 }
+
 @keyframes animateText {
-  0%, 10%, 60% {
+  0%,
+  10%,
+  60% {
     width: 0%;
   }
-  70%, 90% {
+  70%,
+  90% {
     width: 100%;
   }
 }
+
 .site-main .site-banner .banner-image > img {
   padding: 1.3rem 0;
   width: 90rem;
 }
+
 .site-main .about__container {
   max-width: 1024px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 100%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
   grid-column-gap: 2rem;
   width: calc(100% - 2rem);
   text-align: center;
   row-gap: 2rem;
   margin-top: 2.5rem;
 }
+
 .site-main .about__text {
   background: #0d1117;
   -webkit-box-shadow: inset 0 10px 15px #1e242e;
@@ -304,16 +338,20 @@ section {
   padding: 20px;
   border-radius: 5px;
 }
+
 .site-main .about__subtitle {
   margin-bottom: 5px;
 }
+
 .site-main .about__img {
   position: relative;
   width: 300px;
   height: 400px;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   margin-bottom: 20px;
 }
+
 .site-main .about__img img {
   width: 100%;
   height: 100%;
@@ -323,8 +361,9 @@ section {
   -o-object-position: center;
      object-position: center;
 }
+
 .site-main .about__img::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -334,11 +373,13 @@ section {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
+
 .site-main .about__img:hover::after {
   background: none;
 }
+
 .site-main .about__img::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 24px;
   left: -24px;
@@ -351,6 +392,7 @@ section {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
+
 .site-main .about__img:hover::before {
   top: 20px;
   left: -20px;
@@ -408,14 +450,17 @@ section {
     left: 0;
   }
 }
+
 @media (max-width: 952px) {
   .nav ul li a {
     font-size: 16px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .about__container {
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -424,11 +469,11 @@ section {
   .about__img img {
     width: 300px;
   }
-
   .contact-me p {
     border-bottom: none;
   }
 }
+
 @media only screen and (max-width: 575px) {
   .header .nav {
     margin: 0 60px;
@@ -436,16 +481,15 @@ section {
   .header .nav__toggle {
     margin-right: 100px;
   }
-
   .site-banner {
     margin: 0 14px;
   }
 }
+
 @media only screen and (max-width: 340px) {
   .site-main .site-banner .site-title h1 {
     font-size: 41px;
   }
-
   .site-main .site-banner .site-title span {
     font-size: 41px;
     top: 10px;
@@ -453,4 +497,5 @@ section {
   .site-main .site-banner .site-title span::before {
     top: -1px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
