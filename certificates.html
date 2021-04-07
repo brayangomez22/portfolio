@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="./assets/sass/style.css">
+
+<body>
+
+    <div class="certificates">
+        <div class="wrapper">
+
+            <!-- menu -->
+            <nav class="menu">
+                <div class="menu_logo">
+                    <a href="./index.html">BG</a>
+                </div>
+                <div class="menu_items">
+                    <div class="menu_items-link"><a href="./index.html/#portfolio">Portafolio</a></div>
+                    <div class="menu_items-link"><a href="./index.html/#portfolio">Acerca De</a></div>
+                </div>
+            </nav>
+
+            <!-- project section -->
+            <div class="certificates_container" data-scroll-section>
+
+                <div class="certificates_container-title" data-scroll>
+                    <h1 class="anime-js-title">Certificados</h1>
+                </div>
+                <div class="certificates_container-subtitle" data-scroll>
+                    <p>Desarrollador Web Full Stack</p>
+                </div>
+
+                <div class="certificates_container-images">
+                    <div class="certificates_image certificates_image-one" data-scroll data-scroll-speed="1">
+                    </div>
+                    <div class="certificates_image certificates_image-two" data-scroll data-scroll-speed="4">
+                    </div>
+                    <div class="certificates_image certificates_image-three" data-scrol data-scroll-speed="2">
+                    </div>
+                    <div class="certificates_image certificates_image-four" data-scroll data-scroll-speed="4">
+                    </div>
+                </div>
+
+                <div class="certificates-next-link" data-scroll>
+                    <a href="project.html">Próximo</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <script>
+        // smooth scroll 
+        const scroll = new LocomotiveScroll({
+            smooth: true,
+            smoothMobile: true,
+            inertia: 0.75
+        });
+
+        // project title animation 
+        var textWrapper = document.querySelector('.anime-js-title');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline()
+            .add({
+                targets: '.anime-js-title .letter',
+                translateY: [60, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 1200,
+                delay: (el, i) => 600 + 30 * i
+            });
+
+        // project subtitle animation 
+        TweenMax.from(".certificates_container-subtitle", 2, {
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+
+        // project image fade 
+        TweenMax.from(".certificates_image-one", 2, {
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+    </script>
+</body>
+
+</html>
