@@ -450,7 +450,7 @@ SKILLS
   border-radius: 50%;
   -webkit-box-shadow: inset 0 0 50px #000;
           box-shadow: inset 0 0 50px #000;
-  background: var(--black-color);
+  background: #0d1117;
   z-index: 10;
 }
 .skills .container-skills .card .percent .number {
@@ -514,7 +514,7 @@ SKILLS
   width: 100%;
   height: 100%;
   fill: none;
-  stroke: var(--black-color);
+  stroke: #0d1117;
   stroke-width: 10;
   stroke-linecap: round;
   -webkit-transform: translate(5px, 5px);
@@ -528,7 +528,7 @@ SKILLS
 }
 .skills .container-skills .card:hover svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * var(--i)) / 100);
-  stroke: var(--first-color);
+  stroke: #58a6ff;
 }
 
 /*==============================================
@@ -641,7 +641,7 @@ PORTFOLIO HOME
   font-size: 16em;
   font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: 1px var(--first-color);
+  -webkit-text-stroke: 1px #58a6ff;
 }
 .container-full-portfolio .section {
   position: relative;
@@ -776,6 +776,177 @@ CONTACT ME BANNER
   outline: none;
   font-size: 14px;
   font-weight: bold;
+}
+
+/*==============================================
+PRICES
+/*=============================================*/
+.prices {
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width: 974px) {
+  .prices {
+    margin-bottom: 60px;
+  }
+}
+
+.price-comparison {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 70px;
+  width: 100%;
+}
+@media screen and (max-width: 974px) {
+  .price-comparison {
+    margin-top: 40px;
+  }
+}
+.price-comparison .price-column {
+  position: relative;
+  -webkit-box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.8);
+          box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.8);
+  padding: 2rem;
+  width: 325px;
+  border-radius: 8px;
+}
+.price-comparison .price-column.popular {
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#58a6ff), to(#0d1117));
+  background: linear-gradient(90deg, #58a6ff 0%, #0d1117 100%);
+  -webkit-box-shadow: 0 7px 30px rgba(52, 13, 135, 0.3);
+          box-shadow: 0 7px 30px rgba(52, 13, 135, 0.3);
+  color: white;
+  margin-top: -1.5rem;
+  padding-top: 3.5rem;
+  margin-bottom: -1.5rem;
+  padding-bottom: 3.5rem;
+}
+@media screen and (max-width: 974px) {
+  .price-comparison .price-column {
+    margin: 20px;
+  }
+  .price-comparison .price-column.popular {
+    margin-top: 0;
+    padding: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+  }
+}
+.price-comparison .price-column:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.price-comparison .price-column:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.price-comparison .price-column .price-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+.price-comparison .price-column .price-header .price {
+  font-size: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.price-comparison .price-column .price-header .price .dollar-sign {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+}
+.price-comparison .price-column .price-header .price .per-month {
+  font-size: 0.75rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+}
+.price-comparison .price-column .price-header .plan-name {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.price-comparison .price-column .divider {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.price-comparison .price-column.popular .divider {
+  background-color: #58a6ff;
+}
+.price-comparison .price-column .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem;
+}
+.price-comparison .price-column .feature img {
+  height: 1.1em;
+  width: 1.1em;
+  margin-right: 0.5rem;
+}
+.price-comparison .price-column .feature.inactive {
+  color: #999;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+.price-comparison .price-column .most-popular {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.price-comparison .price-column .cta {
+  border: none;
+  background-color: #58a6ff;
+  color: white;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 3rem;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.price-comparison .price-column.popular .cta {
+  background-color: white;
+  color: #58a6ff;
+}
+.price-comparison .price-column .cta:hover, .price-comparison .price-column .cta:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /*==============================================
