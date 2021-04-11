@@ -9,6 +9,7 @@ import Portafolio from '../components/Portafolio'
 import Contact from '../components/Contact'
 import Prices from '../components/Prices'
 import Testimonials from '../components/Testimonials'
+import Proyect from '../components/Proyect'
 
 export default class Home extends Component {
 	render() {
@@ -24,6 +25,7 @@ export default class Home extends Component {
 					<Contact/>
 					<Prices/>
 					<Testimonials/>
+					<Proyect/>
 				</main>
 			</div>
 		)
