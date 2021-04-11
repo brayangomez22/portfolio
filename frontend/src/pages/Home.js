@@ -4,6 +4,8 @@ import Header from '../components/Header'
 import SiteBanner from '../components/SiteBanner'
 import About from '../components/About'
 import Skills from '../components/Skills'
+import Service from '../components/Service'
+import Portafolio from '../components/Portafolio'
 
 export default class Home extends Component {
 	render() {
@@ -14,6 +16,8 @@ export default class Home extends Component {
 					<SiteBanner />
 					<About />
 					<Skills />
+					<Service />
+					<Portafolio />
 				</main>
 			</div>
 		)
