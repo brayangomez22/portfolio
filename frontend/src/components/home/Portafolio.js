@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import page1 from '../assets/img/pages/page1.png'
+import page1 from '../../assets/img/pages/page1.png'
 
 export default class Portafolio extends Component {
     render() {

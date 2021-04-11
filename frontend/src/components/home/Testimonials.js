@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import faqBg11 from '../assets/img/testimonials/faq-bg-1-1.png'
-import avatar1 from '../assets/img/testimonials/avatar-1.svg'
+import faqBg11 from '../../assets/img/testimonials/faq-bg-1-1.png'
+import avatar1 from '../../assets/img/testimonials/avatar-1.svg'
 
 export default class Testimonials extends Component {
     render() {

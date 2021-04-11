@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import frontend from '../assets/img/services/frontend.png';
-import backend from '../assets/img/services/backend.png';
-import seo from '../assets/img/services/seo.png';
+import frontend from '../../assets/img/services/frontend.png';
+import backend from '../../assets/img/services/backend.png';
+import seo from '../../assets/img/services/seo.png';
 
 
 export default class Service extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import bannerImg from '../assets/img/banner-image.png'
+import bannerImg from '../../assets/img/banner-image.png'
 
 export default class SiteBanner extends Component {
 	render() {

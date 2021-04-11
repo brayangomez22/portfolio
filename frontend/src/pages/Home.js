@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
 
-import Header from '../components/Header'
-import SiteBanner from '../components/SiteBanner'
-import About from '../components/About'
-import Skills from '../components/Skills'
-import Service from '../components/Service'
-import Portafolio from '../components/Portafolio'
-import Contact from '../components/Contact'
-import Prices from '../components/Prices'
-import Testimonials from '../components/Testimonials'
-import Proyect from '../components/Proyect'
+import Header from '../components/home/Header'
+import SiteBanner from '../components/home/SiteBanner'
+import About from '../components/home/About'
+import Skills from '../components/home/Skills'
+import Service from '../components/home/Service'
+import Portafolio from '../components/home/Portafolio'
+import Contact from '../components/home/Contact'
+import Prices from '../components/home/Prices'
+import Testimonials from '../components/home/Testimonials'
+import Proyect from '../components/home/Proyect'
+import BoxContact from 	'../components/home/BoxContact'
 
 export default class Home extends Component {
 	render() {
@@ -26,6 +27,7 @@ export default class Home extends Component {
 					<Prices/>
 					<Testimonials/>
 					<Proyect/>
+					<BoxContact/>
 				</main>
 			</div>
 		)

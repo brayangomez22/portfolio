@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import checkCircle from '../assets/img/prices/check-circle.svg'
-import xSquare from '../assets/img/prices/x-square.svg'
+import checkCircle from '../../assets/img/prices/check-circle.svg'
+import xSquare from '../../assets/img/prices/x-square.svg'
 
 export default class Prices extends Component {
     render() {
