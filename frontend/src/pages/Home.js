@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Header from '../components/home/Header'
+import Header from '../components/Header'
 import SiteBanner from '../components/home/SiteBanner'
 import About from '../components/home/About'
 import Skills from '../components/home/Skills'
@@ -11,6 +11,7 @@ import Prices from '../components/home/Prices'
 import Testimonials from '../components/home/Testimonials'
 import Proyect from '../components/home/Proyect'
 import BoxContact from 	'../components/home/BoxContact'
+import Footer from '../components/Footer'
 
 export default class Home extends Component {
 	render() {
@@ -28,6 +29,7 @@ export default class Home extends Component {
 					<Testimonials/>
 					<Proyect/>
 					<BoxContact/>
+					<Footer/>
 				</main>
 			</div>
 		)
