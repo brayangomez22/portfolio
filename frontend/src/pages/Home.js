@@ -8,6 +8,7 @@ import Service from '../components/Service'
 import Portafolio from '../components/Portafolio'
 import Contact from '../components/Contact'
 import Prices from '../components/Prices'
+import Testimonials from '../components/Testimonials'
 
 export default class Home extends Component {
 	render() {
@@ -22,6 +23,7 @@ export default class Home extends Component {
 					<Portafolio />
 					<Contact/>
 					<Prices/>
+					<Testimonials/>
 				</main>
 			</div>
 		)
