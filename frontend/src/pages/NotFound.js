@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import tristeIcon from '../assets/triste.png'
+import tristeIcon from '../assets/img/triste.png';
 
 
 export default class NotFound extends Component {
