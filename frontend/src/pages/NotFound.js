@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import tristeIcon from '../assets/img/triste.png';
+import tristeIcon from '../assets/img/triste.png'
 
 export default class NotFound extends Component {
 	render() {
 		return (
 			<section className="container-error404">
 				<div className="wrap">
-					<div className=".box-notFount">
+					<div className="box-notFount">
 						<div className="text animated pulse">
 							<h1> HTTP 404 Not Found</h1>
 						</div>

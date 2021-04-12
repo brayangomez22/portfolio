@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import bannerImg from '../../assets/img/banner-image.png'
 
@@ -8,7 +8,11 @@ export default class SiteBanner extends Component {
 			<section className="site-banner">
 				<div className="container">
 					<div className="row">
-						<div className="col-lg-6 col-md-12 site-title" style={{ marginTop: '-60px' }}>
+						<div
+							className="col-lg-6 col-md-12 site-title"
+							style={{ marginTop: '-60px' }}
+							data-aos="zoom-in-right"
+						>
 							<h3>Hola</h3>
 							<h1>YO SOY</h1>
 							<div style={{ position: 'relative', top: '-33px' }}>
@@ -26,7 +30,7 @@ export default class SiteBanner extends Component {
 							</div>
 						</div>
 
-						<div className="col-lg-6 col-md-12 banner-image">
+						<div className="col-lg-6 col-md-12 banner-image" data-aos="zoom-in-left">
 							<img src={bannerImg} alt="banner-img" className="img-fluid" />
 						</div>
 					</div>
