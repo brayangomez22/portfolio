@@ -4,7 +4,7 @@ export default class Header extends Component {
 	render() {
 		return (
 			<header className="header" id="header">
-				<nav className="nav container">
+				<nav className="nav container" data-aos="zoom-in-down">
 					<input type="checkbox" id="check" />
 					<label htmlFor="check" className="nav__checkbtn">
 						<i className="fas fa-bars"></i>

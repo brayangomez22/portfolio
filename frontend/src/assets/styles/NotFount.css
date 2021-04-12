@@ -1,9 +1,8 @@
-.wrap {
+.container-error404 .wrap {
   margin: 0px auto;
   width: 486px;
 }
-
-.box-notFount {
+.container-error404 .wrap .box-notFount {
   width: 100%;
   height: 750;
   float: left;
@@ -13,8 +12,7 @@
   overflow: hidden;
   border-radius: 40px;
 }
-
-.text {
+.container-error404 .wrap .text {
   text-align: center;
   margin-top: 56px;
   color: #fff;
@@ -22,8 +20,7 @@
   font-family: sans-serif;
   text-transform: uppercase;
 }
-
-.animated {
+.container-error404 .wrap .animated {
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
   -webkit-animation-fill-mode: both;
@@ -135,18 +132,16 @@
 }
 
 @media all and (max-width: 680px) {
-  .wrap {
+  .container-error404 .wrap {
     width: 100%;
   }
-
-  .box {
+  .container-error404 .wrap .box {
     width: 100%;
     height: 600px;
     border: none;
     background: none;
   }
-
-  .text {
+  .container-error404 .wrap .text {
     margin-top: 20px;
   }
 }
