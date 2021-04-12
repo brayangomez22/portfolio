@@ -11,7 +11,7 @@ export default class Testimonials extends Component {
                     <div className="section-title" data-aos="zoom-in">
                         <h3>Testimonios</h3>
                     </div>
-                    <div className="row" style={{"margin-top": "80px"}}>
+                    <div className="row" style={{marginTop: "80px"}}>
                         <div className="col-lg-3 col-md-6 col-sm-12" data-aos="fade-down-right">
                             <div className="single">
                                 <div className="circle"></div>

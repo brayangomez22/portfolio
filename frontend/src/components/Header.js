@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
-
+import {Link} from 'react-router-dom';
 export default class Header extends Component {
 	render() {
 		return (
 			<header className="header" id="header">
 				<nav className="nav container">
 					<input type="checkbox" id="check" />
-					<label for="check" className="nav__checkbtn">
+					<label htmlFor="check" className="nav__checkbtn">
 						<i className="fas fa-bars"></i>
 					</label>
 
 					<div className="nav__logo">
-						<a href="/">
+						<Link to="/">
 							<svg
 								id="nav__logo"
 								xmlns="http://www.w3.org/2000/svg"
@@ -28,15 +28,15 @@ export default class Header extends Component {
 										<polygon
 											id="Shape"
 											stroke="currentColor"
-											stroke-width="5"
-											stroke-linecap="round"
-											stroke-linejoin="round"
+											strokeWidth="5"
+											strokeLinecap="round"
+											strokeLinejoin="round"
 											points="39 0 0 22 0 67 39 90 78 68 78 23"
 										></polygon>
 									</g>
 								</g>
 							</svg>
-						</a>
+						</Link>
 					</div>
 
 					<ul>
