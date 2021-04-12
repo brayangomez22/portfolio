@@ -38,8 +38,8 @@ export default class Prices extends Component {
                     <button className="cta">Empezar hoy</button>
                 </div>
 
-                <div class="price-column popular" data-aos="fade-up">
-                    <div class="most-popular">Más popular</div>
+                <div className="price-column popular" data-aos="fade-up">
+                    <div className="most-popular">Más popular</div>
                     <div className="price-header">
                         <div className="price">
                             <div className="dollar-sign">$</div>

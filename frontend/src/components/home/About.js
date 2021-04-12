@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import imgAbout from '../../assets/img/img.jpg'
 
 export default class About extends Component {

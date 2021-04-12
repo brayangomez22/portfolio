@@ -12,11 +12,7 @@ export default class certificates extends Component {
                     <div className="wrapper">
                         <nav className="menu">
                             <div className="menu_logo">
-<<<<<<< HEAD
-                                <a href="./index.html">BG</a>
-=======
                                 <Link to="/">BG</Link>  
->>>>>>> 5ce8bd5df5db430e9d571a4773f9168bd1b60e9d
                             </div>
                             <div className="menu_items">
                                 <div className="menu_items-link"><a href="./index.html/#portfolio">Portafolio</a></div>
@@ -40,12 +36,6 @@ export default class certificates extends Component {
                                 <div className="certificates_image certificates_image-four" data-scroll data-scroll-speed="4">
                                 </div>
                             </div>
-<<<<<<< HEAD
-                            <div className="certificates-next-link" data-scroll>
-                                <a href="project.html">Próximo</a>
-                            </div>
-=======
->>>>>>> 5ce8bd5df5db430e9d571a4773f9168bd1b60e9d
                         </div>
                     </div>
                 </div>

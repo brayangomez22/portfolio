@@ -27,7 +27,7 @@ export default class Portafolio extends Component {
                                 quae, quidem inventore veniam nulla pariatur minima aut, magnam repudiandae at vero.
                                 Sint ratione, labore eius minus numquam perspiciatis dicta enim animi, et tempore,
                                 iure ducimus vel?</p>
-                            <a href="#" target="_blank" className="button"
+                            <a href="#" target="blank" className="button"
                                 style={{"position":"relative","top": "15px;margin: 0"}}>Ver Sitio Web</a>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ export default class Portafolio extends Component {
                                 quae, quidem inventore veniam nulla pariatur minima aut, magnam repudiandae at vero.
                                 Sint ratione, labore eius minus numquam perspiciatis dicta enim animi, et tempore,
                                 iure ducimus vel?</p>
-                            <a href="#" target="_blank" class="button"
+                            <a href="#" target="blank" className="button"
                                 style={{"position":"relative", "top": "15px;margin: 0"}}>Ver Sitio Web</a>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ export default class Portafolio extends Component {
                                 quae, quidem inventore veniam nulla pariatur minima aut, magnam repudiandae at vero.
                                 Sint ratione, labore eius minus numquam perspiciatis dicta enim animi, et tempore,
                                 iure ducimus vel?</p>
-                            <a href="#" target="_blank" className="button"
+                            <a href="#" target="blank" className="button"
                                 style={{"position":"relative","top": "15px;margin: 0"}}>Ver Sitio Web</a>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ export default class Portafolio extends Component {
                                 quae, quidem inventore veniam nulla pariatur minima aut, magnam repudiandae at vero.
                                 Sint ratione, labore eius minus numquam perspiciatis dicta enim animi, et tempore,
                                 iure ducimus vel?</p>
-                            <a href="#" target="_blank" className="button"
+                            <a href="#" target="blank" className="button"
                                 style={{"position":"relative","top": "15px;margin: 0"}}>Ver Sitio Web</a>
                         </div>
                     </div>
@@ -111,7 +111,7 @@ export default class Portafolio extends Component {
                                 quae, quidem inventore veniam nulla pariatur minima aut, magnam repudiandae at vero.
                                 Sint ratione, labore eius minus numquam perspiciatis dicta enim animi, et tempore,
                                 iure ducimus vel?</p>
-                            <a href="#" target="_blank" class="button"
+                            <a href="#" target="blank" className="button"
                                 style={{"position":"relative","top": "15px;margin: 0"}}>Ver Sitio Web</a>
                         </div>
                     </div>
