@@ -64,7 +64,7 @@ export default class BoxContact extends Component {
 							<span className="circle one"></span>
 							<span className="circle two"></span>
 
-							<form autocomplete="off">
+							<form autoComplete="off">
 								<h3 className="title">Escribeme !</h3>
 								<div className="input-container">
 									<input type="text" name="name" className="input" placeholder="Nombre" />

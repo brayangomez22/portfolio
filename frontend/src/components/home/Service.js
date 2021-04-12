@@ -8,7 +8,7 @@ export default class Service extends Component {
     render() {
         return (
                 <section className="services" id="services">
-            <div className="section-title" data-aos="zoom-in" style={{"padding-top": "57px"}}>
+            <div className="section-title" data-aos="zoom-in" style={{paddingTop: "57px"}}>
                 <h3>Servicios</h3>
             </div>
             <div className="container-services" data-aos="zoom-in-down">
