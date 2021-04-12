@@ -1798,27 +1798,4 @@ MEDIA QUERIES
 .show-scroll {
   visibility: visible;
   bottom: 1.5rem;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-}
-
-.first {
-  background-color: #58a6ff;
-}
-
-.second {
-  background-color: #58a6ff;
-  left: 33.3%;
-}
-
-.third {
-  background-color: #58a6ff;
-  left: 66.6%;
 }/*# sourceMappingURL=App.css.map */

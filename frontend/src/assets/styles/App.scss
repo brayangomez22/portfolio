@@ -1767,26 +1767,3 @@ MEDIA QUERIES
 	visibility: visible;
 	bottom: 1.5rem;
 }
-
-.overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: $z-modal;
-}
-
-.first {
-	background-color: $first-color;
-}
-
-.second {
-	background-color: $first-color;
-	left: 33.3%;
-}
-
-.third {
-	background-color: $first-color;
-	left: 66.6%;
-}

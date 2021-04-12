@@ -9,6 +9,9 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div>
+				<a href="#" class="scrolltop" id="scroll-top">
+					<i class="bx bx-chevron-up scrolltop__icon"></i>
+				</a>
 				<Header />
 				<main className="site-main">
 					<SiteBanner />
