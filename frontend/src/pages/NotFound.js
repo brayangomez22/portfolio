@@ -7,7 +7,7 @@ export default class NotFound extends Component {
         return (
             <section>
                 <div className="wrap">
-                    <div className="box">
+                    <div className=".box-notFount">
                         <div className="text animated pulse">
                             <h1>Error 404</h1>
                         </div>
