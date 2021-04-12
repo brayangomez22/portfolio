@@ -11,6 +11,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 AOS.init()
 
+
 const container = document.getElementById('app')
 
 ReactDOM.render(<App />, container)
