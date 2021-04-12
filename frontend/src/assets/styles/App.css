@@ -1240,7 +1240,7 @@ CONTACT SECTION
 .container-contact .form .contact-form form .input-container .input {
   width: 100%;
   outline: none;
-  border: 2px solid #fafafa;
+  border: 2px solid #fff;
   background: none;
   padding: 0.6rem 1.2rem;
   color: #fff;
@@ -1251,32 +1251,27 @@ CONTACT SECTION
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+.container-contact .form .contact-form form .input-container .input::-webkit-input-placeholder {
+  color: #fff;
+}
+.container-contact .form .contact-form form .input-container .input::-moz-placeholder {
+  color: #fff;
+}
+.container-contact .form .contact-form form .input-container .input:-ms-input-placeholder {
+  color: #fff;
+}
+.container-contact .form .contact-form form .input-container .input::-ms-input-placeholder {
+  color: #fff;
+}
+.container-contact .form .contact-form form .input-container .input::placeholder {
+  color: #fff;
+}
 .container-contact .form .contact-form form .input-container textarea.input {
   padding: 0.8rem 1.2rem;
   min-height: 150px;
   border-radius: 22px;
   resize: none;
   overflow-y: auto;
-}
-.container-contact .form .contact-form form .input-container label {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding: 0 0.4rem;
-  color: #fafafa;
-  font-size: 0.9rem;
-  font-weight: 400;
-  pointer-events: none;
-  z-index: 1000;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.container-contact .form .contact-form form .input-container.textarea label {
-  top: 1rem;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 .container-contact .form .contact-form form .input-container span {
   position: absolute;
@@ -1309,17 +1304,6 @@ CONTACT SECTION
 .container-contact .form .contact-form form .input-container span::after {
   right: 50%;
 }
-.container-contact .form .contact-form form .input-container.focus label {
-  top: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 25px;
-  font-size: 0.8rem;
-}
-.container-contact .form .contact-form form .input-container.focus span:before, .container-contact .form .contact-form form .input-container.focus span:after {
-  width: 50%;
-  opacity: 1;
-}
 .container-contact .form .contact-form form .btn {
   padding: 0.6rem 1.3rem;
   background-color: #fff;
@@ -1348,6 +1332,7 @@ CONTACT SECTION
 .container-contact .form .text {
   color: white;
   margin: 1.5rem 0 2rem 0;
+  text-align: start;
 }
 .container-contact .form .contact-info {
   padding: 2.3rem 2.2rem;
@@ -1433,6 +1418,74 @@ CONTACT SECTION
   left: calc(50% - 180px);
 }
 
+@media (max-width: 850px) {
+  .container-contact .square {
+    -webkit-transform: translate(140%, 43%);
+            transform: translate(140%, 43%);
+    height: 350px;
+  }
+  .container-contact .form {
+    grid-template-columns: 1fr;
+  }
+  .container-contact .form .contact-info::before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  .container-contact .form .contact-form::before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+  .container-contact .form .social-media {
+    padding: 1.5rem 0 0 0;
+  }
+  .container-contact .big-circle {
+    bottom: 75%;
+    -webkit-transform: scale(0.9) translate(-40%, 30%);
+            transform: scale(0.9) translate(-40%, 30%);
+    right: 50%;
+  }
+  .container-contact .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+}
+@media (max-width: 480px) {
+  .container-contact {
+    padding: 1.5rem;
+  }
+  .container-contact .contact-info:before {
+    display: none;
+  }
+  .container-contact form, .container-contact .contact-info {
+    padding: 1.7rem 1.6rem;
+  }
+  .container-contact .text, .container-contact .information, .container-contact .social-media p {
+    font-size: 0.8rem;
+  }
+  .container-contact .title {
+    font-size: 1.15rem;
+  }
+  .container-contact .social-icons a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .container-contact .icon {
+    width: 23px;
+  }
+  .container-contact .square, .container-contact .big-circle {
+    display: none;
+  }
+  .container-contact .input {
+    padding: 0.45rem 1.2rem;
+  }
+  .container-contact .btn {
+    padding: 0.45rem 1.2rem;
+  }
+}
 /*==============================================
 FOOTER
 /*=============================================*/

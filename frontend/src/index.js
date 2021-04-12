@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/styles/App.scss'
+import './assets/styles/NotFount.scss'
+import './assets/js/main'
 import App from './routes/App'
 
 import AOS from 'aos'

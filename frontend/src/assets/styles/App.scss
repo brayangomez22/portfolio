@@ -1190,15 +1190,19 @@ CONTACT SECTION
 					& .input {
 						width: 100%;
 						outline: none;
-						border: 2px solid #fafafa;
+						border: 2px solid $white-color;
 						background: none;
 						padding: 0.6rem 1.2rem;
-						color: #fff;
+						color: $white-color;
 						font-weight: 500;
 						font-size: 0.95rem;
 						letter-spacing: 0.5px;
 						border-radius: 25px;
 						transition: 0.3s;
+
+						&::placeholder {
+							color: $white-color;
+						}
 					}
 
 					& textarea.input {
@@ -1207,25 +1211,6 @@ CONTACT SECTION
 						border-radius: 22px;
 						resize: none;
 						overflow-y: auto;
-					}
-
-					& label {
-						position: absolute;
-						top: 50%;
-						left: 15px;
-						transform: translateY(-50%);
-						padding: 0 0.4rem;
-						color: #fafafa;
-						font-size: 0.9rem;
-						font-weight: 400;
-						pointer-events: none;
-						z-index: 1000;
-						transition: 0.5s;
-					}
-
-					&.textarea label {
-						top: 1rem;
-						transform: translateY(0);
 					}
 
 					& span {
@@ -1259,19 +1244,6 @@ CONTACT SECTION
 						&::after {
 							right: 50%;
 						}
-					}
-
-					&.focus label {
-						top: 0;
-						transform: translateY(-50%);
-						left: 25px;
-						font-size: 0.8rem;
-					}
-
-					&.focus span:before,
-					&.focus span:after {
-						width: 50%;
-						opacity: 1;
 					}
 				}
 
@@ -1307,6 +1279,7 @@ CONTACT SECTION
 		& .text {
 			color: white;
 			margin: 1.5rem 0 2rem 0;
+			text-align: start;
 		}
 
 		& .contact-info {
@@ -1392,6 +1365,94 @@ CONTACT SECTION
 			border-radius: 50%;
 			top: calc(50% - 180px);
 			left: calc(50% - 180px);
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.container-contact {
+		& .square {
+			transform: translate(140%, 43%);
+			height: 350px;
+		}
+
+		& .form {
+			grid-template-columns: 1fr;
+
+			& .contact-info::before {
+				bottom: initial;
+				top: -75px;
+				right: 65px;
+				transform: scale(0.95);
+			}
+
+			& .contact-form::before {
+				top: -13px;
+				left: initial;
+				right: 70px;
+			}
+
+			& .social-media {
+				padding: 1.5rem 0 0 0;
+			}
+		}
+
+		& .big-circle {
+			bottom: 75%;
+			transform: scale(0.9) translate(-40%, 30%);
+			right: 50%;
+		}
+
+		& .text {
+			margin: 1rem 0 1.5rem 0;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.container-contact {
+		padding: 1.5rem;
+
+		& .contact-info:before {
+			display: none;
+		}
+
+		& form,
+		& .contact-info {
+			padding: 1.7rem 1.6rem;
+		}
+
+		& .text,
+		& .information,
+		& .social-media p {
+			font-size: 0.8rem;
+		}
+
+		& .title {
+			font-size: 1.15rem;
+		}
+
+		& .social-icons a {
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+		}
+
+		& .icon {
+			width: 23px;
+		}
+
+		& .square,
+		& .big-circle {
+			display: none;
+		}
+
+		& .input {
+			padding: 0.45rem 1.2rem;
+		}
+
+		& .btn {
+			padding: 0.45rem 1.2rem;
 		}
 	}
 }
