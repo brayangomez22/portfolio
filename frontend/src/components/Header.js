@@ -39,27 +39,27 @@ export default class Header extends Component {
 						</Link>
 					</div>
 
-					<ul>
+					<ul className="nav-menu">
 						<li className="nav__item">
-							<a href="#">Inicio</a>
+							<a href="#" className="nav__link">Home</a>
 						</li>
 						<li className="nav__item">
-							<a href="#about">Acerca De</a>
+							<a href="#about" className="nav__link">About</a>
 						</li>
 						<li className="nav__item">
-							<a href="#services">Servicios</a>
+							<a href="#services" className="nav__link">Services</a>
 						</li>
 						<li className="nav__item">
-							<a href="#portfolio">Portafolio</a>
+							<a href="#portfolio" className="nav__link">Portfolio</a>
 						</li>
 						<li className="nav__item">
-							<a href="#prices">Precios</a>
+							<a href="#prices" className="nav__link">Prices</a>
 						</li>
 						<li className="nav__item">
-							<a href="#testimonials">Testimonios</a>
+							<a href="#testimonials" className="nav__link">Testimonials</a>
 						</li>
 						<li className="nav__item">
-							<a href="#contact">Contacto</a>
+							<a href="#contact" className="nav__link">Contact</a>
 						</li>
 					</ul>
 				</nav>

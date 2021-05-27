@@ -21,7 +21,7 @@
     font-size: 20px;
   }
   .nav__logo {
-    margin-bottom: 0;
+    margin-bottom: 13px;
   }
   .nav__checkbtn {
     opacity: 1;
@@ -156,15 +156,33 @@
   }
 }
 
-@media only screen and (max-width: 575px) {
-  .header .nav {
+@media screen and (max-width: 575px) {
+  .nav {
     margin: 0 60px;
   }
-  .header .nav__toggle {
+  .nav #check:checked ~ ul {
+    left: -10%;
+  }
+  .nav__logo {
+    margin-right: 105px;
+  }
+  .nav__toggle {
     margin-right: 100px;
   }
   .site-banner {
     margin: 0 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav #check:checked ~ ul {
+    left: -15%;
+  }
+}
+
+@media screen and (max-width: 353px) {
+  .nav #check:checked ~ ul {
+    left: -17%;
   }
 }
 
