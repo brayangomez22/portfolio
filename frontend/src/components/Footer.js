@@ -16,7 +16,7 @@ export default class Footer extends Component {
                             className="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <p className="copyright" data-aos="zoom-in">Copyright by Brayan</p>
+                <p className="copyright">Copyright by Brayan</p>
             </footer>
         )
     }
