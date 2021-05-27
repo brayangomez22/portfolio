@@ -1,0 +1,148 @@
+@import "../variables/variables.scss";
+
+nav.menu {
+	position: fixed !important;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
+
+	& .menu_logo,
+	.menu_items-link {
+		padding: 40px;
+	}
+
+	& .menu_logo a {
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	& .menu_items {
+		display: flex;
+	}
+
+	& .menu_items-link a {
+		color: #fff;
+		font-size: 14px;
+		font-weight: 400;
+		text-decoration: none;
+	}
+
+	& .menu_items-link.active a {
+		text-decoration: underline;
+	}
+}
+
+.certificates_container {
+	width: 70%;
+	margin: 100px auto;
+	color: #fff;
+	padding: 120px 40px;
+	text-align: center;
+
+	&-title h1 {
+		color: #fff;
+		font-family: 'GrandSlang Roman';
+		font-size: 140px;
+	}
+
+	&-subtitle {
+		margin: 20px 0;
+		font-family: 'Neue Montreal';
+		font-size: 16px;
+	}
+
+	&-images {
+		position: relative;
+		width: 100%;
+		height: 2000px;
+		padding: 40px 0;
+	}
+
+	& .certificates_image {
+		width: 600px;
+		height: 500px;
+		margin: 40px auto;
+
+		&-one {
+			background: url(../../img/certificates/1.png) no-repeat 50% 50%;
+			background-size: cover;
+		}
+
+		&-two {
+			position: relative;
+			top: -100px;
+			left: -260px;
+			background: url(../../img/certificates/2.png) no-repeat 50% 50%;
+			background-size: cover;
+		}
+
+		&-three {
+			position: relative;
+			left: 300px;
+			background: url(../../img/certificates/3.png) no-repeat 50% 50%;
+			background-size: cover;
+		}
+
+		&-four {
+			position: relative;
+			top: -200px;
+			left: -100px;
+			background: url(../../img/certificates/4.png) no-repeat 50% 50%;
+			background-size: cover;
+		}
+	}
+
+	& .certificates-next-link {
+		position: relative;
+		top: -100px;
+		width: 100%;
+		height: 400px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		& a {
+			color: #fff;
+			text-decoration: none;
+			font-family: 'GrandSlang Roman';
+			font-size: 160px;
+		}
+	}
+
+	& .anime-js-title .letter {
+		display: inline-block;
+		line-height: 1em;
+	}
+}
+
+@media (max-width: 900px) {
+	.certificates_container-title h1 {
+		font-size: 40px;
+	}
+
+	.certificates_container {
+		width: 80%;
+	}
+
+	.certificates_container-images {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.certificates_image {
+		width: 90%;
+	}
+
+	.certificates_image-one,
+	.certificates_image-two,
+	.certificates_image-three,
+	.certificates_image-four {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+}

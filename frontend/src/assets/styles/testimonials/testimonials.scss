@@ -1,0 +1,183 @@
+@import "../variables/variables.scss";
+
+.testimonials {
+	position: relative;
+
+	& .container {
+		position: relative;
+	}
+
+	& .single {
+		margin-bottom: 30px;
+		border-radius: 5px;
+		background: $black-color;
+		box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.8);
+		text-align: center;
+		position: relative;
+		padding-bottom: 60px;
+		padding-top: 57px;
+		transform-origin: top;
+		transition: transform 500ms ease;
+
+		@media screen and (max-width: 991px) {
+			& {
+				transform-origin: center;
+			}
+		}
+
+		&:hover {
+			transform: scaleY(1.2);
+		}
+
+		& .inner {
+			position: relative;
+			transform-origin: top;
+			transition: transform 500ms ease;
+		}
+
+		&:hover .inner {
+			transform: scaleY(0.8);
+		}
+
+		& h3 {
+			margin: 0;
+			font-size: 25px;
+			font-weight: bold;
+			color: $first-color;
+			line-height: 1em;
+			transition: all 500ms ease;
+		}
+
+		& p {
+			color: $white-color;
+			margin: 0;
+			line-height: 1em;
+			font-size: 14px;
+			margin-top: 12px;
+			margin-bottom: 15px;
+			transition: all 500ms ease;
+		}
+
+		& p.text {
+			margin-top: 7px;
+			margin-bottom: 25px;
+            color: #a8b2d1;
+			padding: 15px;
+			letter-spacing: 1px;
+		}
+
+		&:hover p.text,
+		&:hover h3 {
+			color: $white-color;
+		}
+
+		& .social {
+			position: absolute;
+			bottom: -70px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 11;
+			visibility: hidden;
+			opacity: 0;
+			transition: all 500ms ease;
+
+			& > a {
+				width: 44px;
+				height: 44px;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				background-color: $white-color;
+				opacity: 0.3;
+				transition: all 500ms ease;
+
+				&:hover {
+					opacity: 1;
+				}
+
+				&:hover i {
+					color: $first-color;
+				}
+			}
+
+			& > a i {
+				color: #737789;
+				transition: all 500ms ease;
+				font-size: 16px;
+				border: 2px solid $white-color deepskyblue;
+			}
+
+			& a + a {
+				margin-left: 10px;
+			}
+		}
+
+		&:hover .social {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		& .circle::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 153px;
+			height: 117px;
+			content: '';
+			background-image: url(../../img/testimonials/team-circle-1-1.png);
+			transform: perspective(200px) scaleX(0) scaleY(0);
+			transition: transform 500ms ease, opacity 500ms ease;
+			opacity: 0;
+			transform-origin: right top;
+		}
+
+		& .circle::after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 140px;
+			height: 156px;
+			content: '';
+			background-image: url(../../img/testimonials/team-circle-1-2.png);
+			transform: perspective(150px) scaleX(0) scaleY(0);
+			transition: transform 500ms ease, opacity 500ms ease;
+			opacity: 0;
+			transform-origin: left bottom;
+		}
+
+		&:hover .circle::before,
+		&:hover .circle::after {
+			opacity: 0.3;
+			transform: perspective(200px) scaleX(1) scaleY(0.8);
+		}
+
+		&::before {
+			content: '';
+			border-radius: 5px;
+			background-image: linear-gradient(90deg, $first-color 0%, $black-color 100%);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			transform: scale(1, 0);
+			transform-origin: bottom;
+			transition: transform 500ms ease;
+		}
+
+		&:hover::before {
+			transform: scale(1, 1);
+			transform-origin: top;
+		}
+	}
+}
+
+[class*='bg-shape-'] {
+	position: absolute;
+	filter: blur(5px);
+}

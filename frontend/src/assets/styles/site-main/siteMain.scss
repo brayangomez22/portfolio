@@ -1,0 +1,69 @@
+@import "../variables/variables.scss";
+
+.site-main {
+	.site-banner {
+		text-transform: uppercase;
+
+		& h1 {
+			font-size: 5rem;
+		}
+
+		& h3 {
+			padding-top: 25%;
+			font-weight: 500;
+
+			&::after {
+				content: '';
+				height: 2px;
+				width: 18vw;
+				background: $first-color;
+				display: inline-block;
+				margin-left: 5%;
+				transform: translateY(-10px);
+				filter: blur(1px);
+			}
+		}
+
+		& h4 {
+			font-size: 1.5rem;
+		}
+
+		& span {
+			font-size: 5rem;
+			position: relative;
+			color: $black-color;
+			-webkit-text-stroke: 0.3vw #383d52;
+			text-transform: uppercase;
+
+			&::before {
+				content: attr(data-text);
+				position: absolute;
+				top: -4px;
+				left: 0;
+				width: 0;
+				height: 100%;
+				color: $first-color;
+				-webkit-text-stroke: 0vw #383d52;
+				overflow: hidden;
+				animation: animateText 6s linear infinite;
+			}
+
+			@keyframes animateText {
+				0%,
+				10%,
+				60% {
+					width: 0%;
+				}
+				70%,
+				90% {
+					width: 100%;
+				}
+			}
+		}
+
+		& .banner-image > img {
+			padding: 1.3rem 0;
+			width: 90rem;
+		}
+	}
+}

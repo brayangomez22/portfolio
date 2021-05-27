@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+.testimonials {
+  position: relative;
+}
+
+.testimonials .container {
+  position: relative;
+}
+
+.testimonials .single {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background: #0d1117;
+  -webkit-box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.8);
+          box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.8);
+  text-align: center;
+  position: relative;
+  padding-bottom: 60px;
+  padding-top: 57px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+@media screen and (max-width: 991px) {
+  .testimonials .single {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+.testimonials .single:hover {
+  -webkit-transform: scaleY(1.2);
+          transform: scaleY(1.2);
+}
+
+.testimonials .single .inner {
+  position: relative;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+.testimonials .single:hover .inner {
+  -webkit-transform: scaleY(0.8);
+          transform: scaleY(0.8);
+}
+
+.testimonials .single h3 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: #58a6ff;
+  line-height: 1em;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.testimonials .single p {
+  color: #fff;
+  margin: 0;
+  line-height: 1em;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 15px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.testimonials .single p.text {
+  margin-top: 7px;
+  margin-bottom: 25px;
+  color: #a8b2d1;
+  padding: 15px;
+  letter-spacing: 1px;
+}
+
+.testimonials .single:hover p.text,
+.testimonials .single:hover h3 {
+  color: #fff;
+}
+
+.testimonials .single .social {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 11;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.testimonials .single .social > a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.3;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.testimonials .single .social > a:hover {
+  opacity: 1;
+}
+
+.testimonials .single .social > a:hover i {
+  color: #58a6ff;
+}
+
+.testimonials .single .social > a i {
+  color: #737789;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-size: 16px;
+  border: 2px solid #fff deepskyblue;
+}
+
+.testimonials .single .social a + a {
+  margin-left: 10px;
+}
+
+.testimonials .single:hover .social {
+  opacity: 1;
+  visibility: visible;
+}
+
+.testimonials .single .circle::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 153px;
+  height: 117px;
+  content: '';
+  background-image: url(../../img/testimonials/team-circle-1-1.png);
+  -webkit-transform: perspective(200px) scaleX(0) scaleY(0);
+          transform: perspective(200px) scaleX(0) scaleY(0);
+  -webkit-transition: opacity 500ms ease, -webkit-transform 500ms ease;
+  transition: opacity 500ms ease, -webkit-transform 500ms ease;
+  transition: transform 500ms ease, opacity 500ms ease;
+  transition: transform 500ms ease, opacity 500ms ease, -webkit-transform 500ms ease;
+  opacity: 0;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+.testimonials .single .circle::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 140px;
+  height: 156px;
+  content: '';
+  background-image: url(../../img/testimonials/team-circle-1-2.png);
+  -webkit-transform: perspective(150px) scaleX(0) scaleY(0);
+          transform: perspective(150px) scaleX(0) scaleY(0);
+  -webkit-transition: opacity 500ms ease, -webkit-transform 500ms ease;
+  transition: opacity 500ms ease, -webkit-transform 500ms ease;
+  transition: transform 500ms ease, opacity 500ms ease;
+  transition: transform 500ms ease, opacity 500ms ease, -webkit-transform 500ms ease;
+  opacity: 0;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+}
+
+.testimonials .single:hover .circle::before,
+.testimonials .single:hover .circle::after {
+  opacity: 0.3;
+  -webkit-transform: perspective(200px) scaleX(1) scaleY(0.8);
+          transform: perspective(200px) scaleX(1) scaleY(0.8);
+}
+
+.testimonials .single::before {
+  content: '';
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#58a6ff), to(#0d1117));
+  background-image: linear-gradient(90deg, #58a6ff 0%, #0d1117 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+.testimonials .single:hover::before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+[class*='bg-shape-'] {
+  position: absolute;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+/*# sourceMappingURL=testimonials.css.map */

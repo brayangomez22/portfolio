@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+.site-main .site-banner {
+  text-transform: uppercase;
+}
+
+.site-main .site-banner h1 {
+  font-size: 5rem;
+}
+
+.site-main .site-banner h3 {
+  padding-top: 25%;
+  font-weight: 500;
+}
+
+.site-main .site-banner h3::after {
+  content: '';
+  height: 2px;
+  width: 18vw;
+  background: #58a6ff;
+  display: inline-block;
+  margin-left: 5%;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.site-main .site-banner h4 {
+  font-size: 1.5rem;
+}
+
+.site-main .site-banner span {
+  font-size: 5rem;
+  position: relative;
+  color: #0d1117;
+  -webkit-text-stroke: 0.3vw #383d52;
+  text-transform: uppercase;
+}
+
+.site-main .site-banner span::before {
+  content: attr(data-text);
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #58a6ff;
+  -webkit-text-stroke: 0vw #383d52;
+  overflow: hidden;
+  -webkit-animation: animateText 6s linear infinite;
+          animation: animateText 6s linear infinite;
+}
+
+@-webkit-keyframes animateText {
+  0%,
+  10%,
+  60% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+@keyframes animateText {
+  0%,
+  10%,
+  60% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+.site-main .site-banner .banner-image > img {
+  padding: 1.3rem 0;
+  width: 90rem;
+}
+/*# sourceMappingURL=siteMain.css.map */

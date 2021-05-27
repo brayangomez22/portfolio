@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(13, 17, 23, 0.9);
+  -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  width: 100%;
+  font-weight: 700;
+}
+
+.nav ul li {
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+}
+
+.nav ul li a {
+  position: relative;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.nav ul li a::before {
+  content: '';
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#58a6ff), to(#0d1117));
+  background-image: linear-gradient(90deg, #58a6ff 0%, #0d1117 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+.nav ul li a:hover::before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  z-index: -1;
+}
+
+.nav__logo {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav__logo a {
+  color: #58a6ff;
+  width: 38px;
+  height: 38px;
+}
+
+.nav #nav__logo {
+  color: #58a6ff;
+  fill: transparent;
+}
+
+.nav__checkbtn {
+  font-size: 30px;
+  color: #58a6ff;
+  line-height: 70px;
+  margin-right: 40px;
+  float: right;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.nav #check {
+  display: none;
+}
+/*# sourceMappingURL=header.css.map */

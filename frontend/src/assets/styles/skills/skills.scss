@@ -1,0 +1,122 @@
+@import "../variables/variables.scss";
+
+.skills {
+	position: relative;
+
+	& .container-skills {
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 30px;
+
+		& .card {
+			position: relative;
+			width: 250px;
+			background: transparent;
+			box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.8);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 300px;
+			border-radius: 5px;
+			text-align: center;
+			overflow: hidden;
+			transition: 0.5s;
+			margin: 20px;
+
+			&:hover {
+				transform: translateY(-10px);
+				box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
+			}
+
+			& .percent {
+				position: relative;
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				box-shadow: inset 0 0 50px #000;
+				background: $black-color;
+				z-index: 10;
+
+				& .number {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 50%;
+
+					& h2 {
+						color: #777;
+						font-weight: 700;
+						font-size: 40px;
+						transition: 0.5s;
+
+						& span {
+							font-size: 24px;
+							color: #777;
+							transition: 0.5s;
+						}
+					}
+				}
+			}
+
+			&:hover .percent .number h2 {
+				color: #fff;
+				font-size: 60px;
+			}
+
+			&:hover .percent .number h2 span {
+				color: #fff;
+			}
+
+			& .text {
+				position: relative;
+				color: #777;
+				margin-top: 20px;
+				font-weight: 700;
+				font-size: 18px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				transition: 0.5s;
+			}
+
+			&:hover .text {
+				color: #fff;
+			}
+
+			& svg {
+				position: relative;
+				width: 150px;
+				height: 150px;
+				z-index: 1000;
+
+				& circle {
+					width: 100%;
+					height: 100%;
+					fill: none;
+					stroke: $black-color;
+					stroke-width: 10;
+					stroke-linecap: round;
+					transform: translate(5px, 5px);
+					transition: 0.5s ease;
+
+					&:nth-child(2) {
+						stroke-dasharray: 440;
+						stroke-dashoffset: 440;
+					}
+				}
+			}
+
+			&:hover svg circle:nth-child(2) {
+				stroke-dashoffset: calc(440 - (440 * var(--i)) / 100);
+				stroke: $first-color;
+			}
+		}
+	}
+}

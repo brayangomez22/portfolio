@@ -1,0 +1,75 @@
+@import "../variables/variables.scss";
+
+footer {
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.5);
+
+	& p:nth-child(1) {
+		font-size: 30px;
+		font-weight: bold;
+		color: $first-color;
+		line-height: 10px;
+		margin-bottom: 50px;
+	}
+
+	.container-social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		& .social-bottons {
+			& a {
+				display: inline-flex;
+				text-decoration: none;
+				font-size: 20px;
+				width: 60px;
+				height: 60px;
+				color: #fff;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				margin: 0 8px;
+
+				&::before {
+					content: '';
+					position: absolute;
+					width: 60px;
+					height: 60px;
+					background: $first-color;
+					border-radius: 50%;
+					z-index: -1;
+					transition: 0.5s ease-in;
+				}
+
+				&:hover::before {
+					transform: scale(0);
+				}
+
+				& i {
+					transition: 0.5s ease-in;
+				}
+
+				&:hover i {
+					background: $first-color;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					transform: scale(2);
+				}
+			}
+		}
+	}
+
+	& .copyright {
+        color: #a8b2d1;
+		font-size: 12px;
+		position: absolute;
+		left: 50%;
+		bottom: 10px;
+		transform: translateX(-50%);
+	}
+}

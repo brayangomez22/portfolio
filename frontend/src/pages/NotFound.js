@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import tristeIcon from '../assets/img/triste.png'
+import "../assets/styles/error404/error404.scss";
 
 export default class NotFound extends Component {
 	render() {

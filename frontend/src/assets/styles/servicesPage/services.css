@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+.services {
+  position: relative;
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2196f3), to(#58a6ff));
+  background: linear-gradient(#2196f3, #58a6ff);
+  -webkit-clip-path: circle(30% at right 70%);
+          clip-path: circle(30% at right 70%);
+  -webkit-filter: blur(7px);
+          filter: blur(7px);
+}
+
+.services::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2196f3), to(#58a6ff));
+  background: linear-gradient(#2196f3, #58a6ff);
+  -webkit-clip-path: circle(20% at 10% 10%);
+          clip-path: circle(20% at 10% 10%);
+  -webkit-filter: blur(7px);
+          filter: blur(7px);
+}
+
+.services .container-services {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 1;
+}
+
+.services .container-services .card-services {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  background: #0d1117;
+  -webkit-box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.8);
+          box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.8);
+  border-radius: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.services .container-services .card-services .content {
+  padding: 20px;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.services .container-services .card-services .content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 22px;
+}
+
+.services .container-services .card-services .content h3 {
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+}
+
+.services .container-services .card-services .content p {
+  font-size: 1em;
+  color: #a8b2d1;
+  font-weight: 300;
+}
+/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+.about__container {
+  max-width: 1024px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  text-align: center;
+  row-gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.about__text {
+  background: #0d1117;
+  -webkit-box-shadow: inset 0 10px 15px #1e242e;
+          box-shadow: inset 0 10px 15px #1e242e;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.about__subtitle {
+  margin-bottom: 5px;
+}
+
+.about__img {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-bottom: 20px;
+}
+
+.about__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.about__img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(88, 166, 255, 0.1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.about__img:hover::after {
+  background: none;
+}
+
+.about__img::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -24px;
+  width: 300px;
+  height: 400px;
+  background: transparent;
+  border: 2px solid #58a6ff;
+  border-radius: 4px;
+  z-index: -1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.about__img:hover::before {
+  top: 20px;
+  left: -20px;
+}
+/*# sourceMappingURL=about.css.map */
